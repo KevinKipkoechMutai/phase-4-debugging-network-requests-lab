@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Trying to add a new toy returned an unitialized constant error. Fixed a spelling error in the controller: from Toys.create() to Toy.create() to address the issue. 
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: There was an unhandled rejection error. Added a new line to the update method (render json: toy) to fix it.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: Returned a not found error. Modified the resources to include the delete (destroy) route. 
